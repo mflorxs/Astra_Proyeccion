@@ -1,0 +1,125 @@
+body{
+    background-image: url("imagenes/TT.png");
+    background-attachment: fixed;
+    background-clip: inherit;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#header{
+    width: 100%;
+    height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+ul, ol{
+    list-style: none;
+}
+.nav li a {
+   background-color: #010a88d7;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    min-width: 100px;
+
+}
+.nav li a:hover{
+    background-color: #434343;
+    
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+}
+.nav li:hover > ul{
+    display: block;
+}
+.nav li ul li {
+    position: relative;
+}
+.nav li ul li ul{
+    right: -100px;
+    top: 0px;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 100px;
+    border: 8px solid #000229;
+    border-radius: 100px;
+    background: #000000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#020999));
+    background: -moz-linear-gradient(top, #000000, #020999);
+    background: linear-gradient(to bottom, #000000, #020999);
+    -webkit-box-shadow: #000231 0px 0px 40px 0px;
+    -moz-box-shadow: #000231 0px 0px 40px 0px;
+    box-shadow: #000231 0px 0px 40px 0px;
+    text-shadow: #000115 1px 1px 1px;
+    font: normal normal bold 20px tahoma;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:active,
+.button:focus {
+
+    background: #000000;
+    background: -webkit-gradient(linear, center, center, from(#000000), to(#020bb8));
+    background: -moz-linear-gradient(top, #000000, #020bb8);
+    background: linear-gradient(to bottom, #000000, #020bb8);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin-block-end: inherit;
+    position: inherit;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEGUlEQVRIiZWWXWgcVRTHf+fu7HY3u901zYdJsE2aNJKGJjVVQR8kaFFL3lpCkJaKHxQrPqjFjxZBDAgiPoo+CIJSm0qooYik9KEU7UtB2yZbjbVJ09SSrUmrzXc2u5s5Pszs7CbZLnqWhTN35v7///ufc+8ZAQwFouHUIKKmHrQT2Ak0A5WADdwBhoAzQK8YGRve1VIIBnEJ7HyiLf3xOuAjYI8gljOq7uOrQzMKfcCRkY7W0TwcGzD5BNSevW78i7N7gc8QiWbh8qFVFRFBVR2FuXwGeA2CPSMdD2YF255qF/wtETkqSBR1wFQdBi9HHEZkdR4FOQrJQ829v3qiswTGvzi7V4SPs8aJOOpkTa5591fmIgDySSpiP+diOxa5nl8SkWh2Rc9WRGgvC6PAhalFLk4vkkhmAKgJWuyIhdhxXwgD/Pj3PKdvz3kWunZtH+loHZOGU4NGVI4jdKFgRPiw6X46qz2u/xS9iWne/2MS2/EMlG9VdJ9xSpE9gvN7piJCZ3XUtaT4H1VwX3pXTYynKyKICuJwdIpKnQHtdErR8fBAbWn+UtF75arE3+vm0puHsVMpAA5sKkUE1HlnFtBpgJ1uodBQEmDb+iA//HSOrpdf4nD3B8zPz+cIXfD0ss2ViQWSd+6SvjvF/MQV7OUULdEg9SWBfOd2GqBZBAShvTzs+Nn3HQtT01wejHNhcGCNNccGJni77zeuv3iIxnd2M376dSbOf44Rob0s7FjkaNlmgErnQnmstAQBmrY2A1ASDlNfV7fGoraqCJvLw9wK/85Z6yaBskbCVc5R8XhpCepuEaBctvTHlwFjRPj5iQbWW4a0bXP56jAPVJZTuaGsYNUosP/SKyzZKb7c/ilRKwLATMbm0XPXsqIyFjApIlU1QYuo3wdAwOfj4a1NRctSgDfqX2VheZGoFXGqCoj5fdQELRLJDKpMWsAQaNXGkL/YOVMwfyT2kJfnz90Y9LubUocs4IwqT8UsX65a3BhbSHHyrxkSyQxLto3t3hKBdUaoWednd3WU2pB/xdyY35fNz1hAL0h3RtXKLhPg6twS+y7eZDpjF7XqeGKKY20baYys88Yyrv/ACWPUjIKeHJ5PeQoSyTQH4+NMp7PgSu4EyG00RZlK2xyMJ7iVTHvjw3MpgD41MuoddgKDL2wqjdQE/Xxx4x9uL2WKKkfwSBGoDFgcqN3AeDLNV3/enQHaRjpaR72Gs6U//jwiXxfqWf8rVFHYP9LR2gN5bTLks79B9YiirlU5W4pZtCJ3wN9Nzs71uBPtFS2z+vtfTNgKOC0Tip/XqyxCnZaZDq3vufHkZjv/sXs2fYE9SLbp38sRzZBr+mOFdHgrcMMAdmP/gFFMPbD6swWQSdDsZ8sJNTJ6bVeLvQrLAPa/oSzldDGeGPgAAAAASUVORK5CYII=") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+.espacio {
+    margin-top: 24em;
+    margin-left: 5em;
+}
+.red{
+    border-radius: 0px 0px 30px 0px;
+    -moz-border-radius: 0px 0px 30px 0px;
+    -webkit-border-radius: 0px 0px 30px 0px;
+}
+.red2{
+    border-radius: 0px 30px 0px 0px;
+    -moz-border-radius: 0px 30px 0px 0px;
+    -webkit-border-radius: 0px 30px 0px 0px;
+}
+.red3{
+    border-radius: 0px 0px 0px 30px;
+    -moz-border-radius: 0px 0px 0px 30px;
+    -webkit-border-radius: 0px 0px 0px 30px;
+}
+.red4{
+    border-radius: 0px 0px 30px 30px;
+    -moz-border-radius: 0px 0px 30px 30px;
+    -webkit-border-radius: 0px 0px 30px 30px;
+
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
